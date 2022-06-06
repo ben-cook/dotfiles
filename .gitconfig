@@ -1,0 +1,7 @@
+[core]
+  editor = /usr/local/bin/nvim
+[user]
+	name = Ben Cook
+	email = benpetercook@gmail.com
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
