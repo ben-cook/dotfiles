@@ -92,4 +92,10 @@ source $ZSH/oh-my-zsh.sh
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias dotfiles='/usr/bin/git --git-dir=/home/ubentu/dotfiles/ --work-tree=/home/ubentu'
+alias dotfiles='/usr/bin/git --git-dir=/home/ben/dotfiles/ --work-tree=/home/ben'
+alias n='nvim'
+
+# fnm
+export PATH=/home/ben/.fnm:$PATH
+eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
