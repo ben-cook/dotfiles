@@ -22,7 +22,7 @@ zstyle ':omz:update' frequency 7
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -94,8 +94,13 @@ source $ZSH/oh-my-zsh.sh
 
 alias dotfiles='/usr/bin/git --git-dir=/home/ben/dotfiles/ --work-tree=/home/ben'
 alias n='nvim'
+alias z='zoxide'
 
 # fnm
 export PATH=/home/ben/.fnm:$PATH
 eval "`fnm env`"
 eval "$(fnm env --use-on-cd)"
+
+# zoxide
+eval "$(zoxide init zsh)"
+alias lg='lazygit'
